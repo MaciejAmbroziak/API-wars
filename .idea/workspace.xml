@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08a539d-d424-420a-b453-0ab7b0ee9a1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/validatePassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connection_to_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -97,7 +97,9 @@
       <workItem from="1581672308676" duration="328000" />
       <workItem from="1581672684821" duration="43000" />
       <workItem from="1581672773834" duration="48000" />
-      <workItem from="1581672837269" duration="509000" />
+      <workItem from="1581672837269" duration="1978000" />
+      <workItem from="1581674857422" duration="1623000" />
+      <workItem from="1581763627396" duration="348000" />
     </task>
     <servers />
   </component>
@@ -109,26 +111,42 @@
       <screen x="57" y="27" width="1309" height="741" />
     </state>
     <state x="169" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/57.27.1309.741@57.27.1309.741" timestamp="1581584567622" />
+    <state x="532" y="273" width="338" height="253" key="DBNavigator.ConnectionAuthenticationDialog" timestamp="1581675189132">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="532" y="273" width="338" height="253" key="DBNavigator.ConnectionAuthenticationDialog/57.27.1309.741@57.27.1309.741" timestamp="1581675189132" />
+    <state x="444" y="321" width="524" height="150" key="DBNavigator.CreateRenameConsoleDialog" timestamp="1581676045165">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="444" y="321" width="524" height="150" key="DBNavigator.CreateRenameConsoleDialog/57.27.1309.741@57.27.1309.741" timestamp="1581676045165" />
+    <state x="244" y="54" width="924" height="684" key="DBNavigator.ProjectSettingsDialog" timestamp="1581675979106">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="244" y="54" width="924" height="684" key="DBNavigator.ProjectSettingsDialog/57.27.1309.741@57.27.1309.741" timestamp="1581675979106" />
+    <state x="505" y="164" width="402" height="464" key="DBNavigator.ResultSetRecordViewerDialog" timestamp="1581675576761">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="505" y="164" width="402" height="464" key="DBNavigator.ResultSetRecordViewerDialog/57.27.1309.741@57.27.1309.741" timestamp="1581675576761" />
     <state x="494" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581584551647">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
     <state x="494" y="154" width="424" height="484" key="FileChooserDialogImpl/57.27.1309.741@57.27.1309.741" timestamp="1581584551647" />
-    <state width="1263" height="167" key="GridCell.Tab.0.bottom" timestamp="1581673004408">
+    <state width="1263" height="167" key="GridCell.Tab.0.bottom" timestamp="1581764065471">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state width="1263" height="167" key="GridCell.Tab.0.bottom/57.27.1309.741@57.27.1309.741" timestamp="1581673004408" />
-    <state width="1263" height="167" key="GridCell.Tab.0.center" timestamp="1581673004408">
+    <state width="1263" height="167" key="GridCell.Tab.0.bottom/57.27.1309.741@57.27.1309.741" timestamp="1581764065471" />
+    <state width="1263" height="167" key="GridCell.Tab.0.center" timestamp="1581764065470">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state width="1263" height="167" key="GridCell.Tab.0.center/57.27.1309.741@57.27.1309.741" timestamp="1581673004408" />
-    <state width="1263" height="167" key="GridCell.Tab.0.left" timestamp="1581673004407">
+    <state width="1263" height="167" key="GridCell.Tab.0.center/57.27.1309.741@57.27.1309.741" timestamp="1581764065470" />
+    <state width="1263" height="167" key="GridCell.Tab.0.left" timestamp="1581764065470">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state width="1263" height="167" key="GridCell.Tab.0.left/57.27.1309.741@57.27.1309.741" timestamp="1581673004407" />
-    <state width="1263" height="167" key="GridCell.Tab.0.right" timestamp="1581673004408">
+    <state width="1263" height="167" key="GridCell.Tab.0.left/57.27.1309.741@57.27.1309.741" timestamp="1581764065470" />
+    <state width="1263" height="167" key="GridCell.Tab.0.right" timestamp="1581764065470">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state width="1263" height="167" key="GridCell.Tab.0.right/57.27.1309.741@57.27.1309.741" timestamp="1581673004408" />
+    <state width="1263" height="167" key="GridCell.Tab.0.right/57.27.1309.741@57.27.1309.741" timestamp="1581764065470" />
     <state width="1263" height="208" key="GridCell.Tab.1.bottom" timestamp="1581672639798">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
@@ -145,14 +163,14 @@
       <screen x="57" y="27" width="1309" height="741" />
     </state>
     <state width="1263" height="208" key="GridCell.Tab.1.right/57.27.1309.741@57.27.1309.741" timestamp="1581672639798" />
-    <state x="193" y="31" key="SettingsEditor" timestamp="1581584526800">
+    <state x="193" y="31" key="SettingsEditor" timestamp="1581676015766">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state x="193" y="31" key="SettingsEditor/57.27.1309.741@57.27.1309.741" timestamp="1581584526800" />
-    <state x="359" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581672310294">
+    <state x="193" y="31" key="SettingsEditor/57.27.1309.741@57.27.1309.741" timestamp="1581676015766" />
+    <state x="359" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581763629457">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
-    <state x="359" y="224" key="com.intellij.ide.util.TipDialog/57.27.1309.741@57.27.1309.741" timestamp="1581672310294" />
+    <state x="359" y="224" key="com.intellij.ide.util.TipDialog/57.27.1309.741@57.27.1309.741" timestamp="1581763629457" />
     <state x="0" y="27" width="898" height="741" key="find.popup" timestamp="1581592126540">
       <screen x="57" y="27" width="1309" height="741" />
     </state>
@@ -170,6 +188,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/APIwars2_0$Flask__server_py_.coverage" NAME="Flask (server.py) Coverage Results" MODIFIED="1581673004389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/APIwars2_0$Flask__server_py_.coverage" NAME="Flask (server.py) Coverage Results" MODIFIED="1581764065453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
