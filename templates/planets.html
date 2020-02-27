@@ -10,6 +10,8 @@
                 <th>terrain</th>
                 <th>surface water</th>
                 <th>population</th>
+                <th>residents</th>
+                <th>vote</th>
             </tr>
             {% for planet in planets %}
             <tr>
@@ -19,6 +21,8 @@
                 <td>{{ planet['terrain'] }}</td>
                 <td>{{ planet['surface_water'] }}</td>
                 <td>{{ planet['population'] }}</td>
+                <td>residents</td>
+                <td>vote</td>
             </tr>
             {% endfor %}
         </table>
