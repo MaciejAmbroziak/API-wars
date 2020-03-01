@@ -28,9 +28,19 @@ fetch('https://swapi.co/api/planets')  // set the path; the method is GET by def
         }
         let planetResidents;
         residentsButtons[i].addEventListener('click', function () {
+            let allResidents = '';
+            allResidents ='     <tr>\n' +
+    '                        <th>name</th>\n' +
+    '                        <th>height</th>\n' +
+    '                        <th>mass</th>\n' +
+    '                        <th>skin color</th>\n' +
+    '                        <th>hair color</th>\n' +
+    '                        <th>eye color</th>\n' +
+    '                        <th>birth year</th>\n' +
+    '                        <th>gender</th>\n' +
+    '                    </tr>';
             for (let j = 0; j < data.results[i].residents.length; j++) {
                 if (data.results[i].residents.length > 0) {
-                    console.log(data.results[i].residents[j]);
                     fetch(data.results[i].residents[j])
                         .then((residentsResponse) => residentsResponse.json())
                         .then((residentsData) => {
