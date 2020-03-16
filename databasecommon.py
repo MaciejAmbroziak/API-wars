@@ -29,9 +29,8 @@ def get_connection_string():
 
 def open_database():
     try:
-        DATABASE_URL = os.environ['DATABASE_URL']
         connection_string = get_connection_string()
-        connection = psycopg2.connect(DATABASE_URL, sslmode='require')
+        connection = psycopg2.connect(connection_string)
         connection.autocommit = True
     except psycopg2.DatabaseError as exception:
         print('Database connection problem')
