@@ -27,7 +27,8 @@
                 <td>{{ planet['surface_water'] }}</td>
                 <td>{{ planet['population'] }}</td>
                 <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Residents</button></td>
-                <td><button type="button" class="btn btn-secondary">Vote</button></td>
+                <td><button type="button" class="btn btn-light">Vote</button></td>
+
             </tr>
             {% endfor %}
         </table>
@@ -42,5 +43,25 @@
             </div>
         </div>
     </div>
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+          <table id="classTable" class="table table-bordered">
+
+              {% for planet in planet_votes %}
+                  <tr>
+                      <td>{{ planet['planet_name'] }}</td>
+                      <td>{{ planet['count'] }}</td>
+                  </tr>
+              {% endfor %}
+          </table>
+    </div>
+  </div>
+</div>
+
+
 </div>
 {% endblock %}

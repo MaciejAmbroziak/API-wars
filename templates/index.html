@@ -25,13 +25,16 @@
               <a class="nav-link" href="{{url_for('login')}}">Login <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-              <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
               <a class="nav-link" href="{{ url_for('register')}}">Register <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-              <a class="nav-link" href="#">Voting statistics <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id ="vote" href="{{ url_for('main')}}" data-toggle="modal" data-target=".bd-example-modal-sm">Voting statistics <span class="sr-only">(current)</span></a>
+
+          <li class="nav-item active">
+              <p class="nav-link">{{ user }} <span class="sr-only">(current)</span></p>
           </li>
       </ul>
 </nav>
@@ -40,5 +43,15 @@
 <div class="content-wrapper">
             {% block content %} {% endblock %}
         </div>
+
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
 </body>
 </html>

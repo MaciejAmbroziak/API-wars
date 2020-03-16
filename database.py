@@ -30,3 +30,22 @@ def check_password_in_database(cursor, user):
                     """,
                    {'user': user})
     return cursor.fetchall()
+
+@databasecommon.connection_handler
+def check_number_of_votes(cursor):
+    cursor.execute("""
+                    SELECT planet_name, count(submission_time) FROM votes
+                    GROUP BY planet_name;
+                    """)
+    return cursor.fetchall()
+
+
+@databasecommon.connection_handler
+def insert_planet_to_vote_table(cursor, planet_id, planet_name, user_id):
+    cursor.execute("""
+                    INSERT INTO votes (planet_id, planet_name, user_id)
+                    VALUES (%(planet_id)s, %(planet_name)s, %(user_id)s)
+                    """,
+                   {'planet_id': planet_id,
+                    'planet_name': planet_name,
+                    'user_id': user_id})

@@ -5,11 +5,17 @@ app = Flask(__name__)
 
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def main():
     response = requests.get('https://swapi.co/api/planets').json()
     list_of_planets = response['results']
-    return render_template('planets.html', planets=list_of_planets)
+    planet_votes = database.check_number_of_votes()
+    print(planet_votes)
+    if session:
+        return render_template('planets.html', planets=list_of_planets, planet_votes=planet_votes, user=session['username'])
+    else:
+        return render_template('planets.html', planets=list_of_planets, planet_votes=planet_votes, user='You are not logged in')
+
 
 @app.route('/register', methods=['GET','POST'])
 def register():
@@ -33,11 +39,23 @@ def login():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password1']
-        print(email)
-        password2 = database.check_password_in_database(email)
+        password2 = database.check_password_in_database(email)[0]['password']
         if password == password2:
-            session['username'] = request.form['username']
+            session['username'] = email
         return redirect(url_for('main'))
+
+
+@app.route('/votes/<int:planet_id>/<planet_name>/<email>', methods = ['POST'])
+def count_votes(planet_id, planet_name, email):
+    user_id = 1
+    database.insert_planet_to_vote_table(planet_id, planet_name, user_id)
+    return redirect(url_for('main'))
+
+
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('main'))
 
 
 
