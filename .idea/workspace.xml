@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08a539d-d424-420a-b453-0ab7b0ee9a1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/universe.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/universe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/planets.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/planets.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Flask server.Flask (server.py)">
     <configuration name="APIwars2.0" type="PythonConfigurationType" factoryName="Python">
@@ -274,6 +272,8 @@
       <workItem from="1583414655378" duration="44000" />
       <workItem from="1583415428224" duration="6000" />
       <workItem from="1583483212674" duration="642000" />
+      <workItem from="1584369565088" duration="591000" />
+      <workItem from="1584370864903" duration="1119000" />
     </task>
     <servers />
   </component>
@@ -294,6 +294,10 @@
     </state>
     <state x="169" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/57.27.1309.741@57.27.1309.741" timestamp="1581584567622" />
     <state x="-506" y="27" width="1084" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1296.741@70.27.1296.741" timestamp="1583093049504" />
+    <state x="421" y="202" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584371087111">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="421" y="202" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1296.741@70.27.1296.741" timestamp="1584371087111" />
     <state x="75" y="130" width="515" height="556" key="EnvironmentVariablesDialog" timestamp="1583093046663">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
@@ -347,11 +351,11 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="506" y="59" width="413" height="684" key="RollbackChangesDialog/70.27.1296.741@70.27.1296.741" timestamp="1583178811608" />
-    <state x="205" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1583092877273">
+    <state x="205" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1584370150412">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="193" y="31" key="SettingsEditor/57.27.1309.741@57.27.1309.741" timestamp="1581584526800" />
-    <state x="205" y="31" width="1022" height="737" key="SettingsEditor/70.27.1296.741@70.27.1296.741" timestamp="1583092877273" />
+    <state x="205" y="31" width="1022" height="737" key="SettingsEditor/70.27.1296.741@70.27.1296.741" timestamp="1584370150412" />
     <state x="471" y="223" width="484" height="351" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1583241590457">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
